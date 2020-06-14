@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="Styles.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <head>
+
+  <style>
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    .flex-container {
+    display: flex;
+    }
+
+  </style>
+
+ </head>
+  <body>
+   <center>
+    <header id="header">
+      <img id="header-img" src="https://tinyurl.com/y9wch6aa"/>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#Learn_More">Learn More</a>
+        <a class="nav-link" href="#Request_a_Coupon">Request a Coupon</a>
+        <a class="nav-link" href="#Buy_on_Etsy">Buy on Etsy</a>
+      </nav>  
+    </header>
+    <h1>Product Landing Page</h1>
+     <section id="Learn_More"></section>
+     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VX5Y4Kiaas8" frameborder="0" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <section id="Request_a_Coupon"></section>
+    <h2>Request a Coupon</h2>
+     <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="you@email.com" name="email"></input>
+      <input id="submit" type="submit"></input>
+     <section id="Buy_on_Etsy">
+      <div class="flex-container">
+        <div><a href="Cro-Boots_link">Cro-Boots Website</a></div>
+        <div><a href="Etsy_Cro-Boots_link">Etsy_Cro-Boots Website</a></div>
+        <div><a href="YouTube_link">YouTube Website</a></div>
+      </div>
+     </section>
+    </center> 
+    </form>
+    
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+  window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  </script>
+</html>
